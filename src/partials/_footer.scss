@@ -1,0 +1,32 @@
+footer {
+    text-align: center;
+    margin: $spacing *2 0;
+    ul {
+        @include list_reset;
+        
+        margin-bottom: $spacing;
+        
+
+    }
+    li {
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $separator_color;
+            border-radius: 50%;
+            color: white;
+            margin: 0 ($spacing/2);
+            transition: background-color $transition_duration;
+
+            
+            &:hover {
+                background-color: $secondary_color;
+                color: white;
+            }
+        }
+    }
+}

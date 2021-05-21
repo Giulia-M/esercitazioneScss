@@ -1,0 +1,26 @@
+.logo-container {
+    text-align: center;
+
+    img {
+        max-width: 300px;
+        margin: ($spacing*4) 0;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px $separator_color;
+
+    ul {
+        @include list_reset;
+
+        li {
+
+            a {
+                padding: $spacing;
+                display: inline-block;
+            }
+        }
+    }
+}

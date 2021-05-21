@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font_family;
+    font-size: $font_size;
+}
+
+a {
+    // color: $primary_color;
+    // text-decoration: none;
+    // transition: color $transition_duration;
+
+    // &:hover {
+    //     color: $secondary_color;
+    // }
+    @include default_btn;
+}
+.container {
+    max-width: 920px;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+h1 {
+    margin: ($spacing *3) 0;
+    text-align: center;
+}
+
+h2 {
+    margin: ($spacing *2) 0;
+}
+
+section {
+    border-bottom: solid 1px $separator_color;
+    padding-bottom: $spacing;
+    padding-top: $spacing * 1.5;
+}
+.row {
+    display: flex;
+    margin: 0 (-($spacing / 2));
+
+    [class^="col-"] {
+        padding: 0 ($spacing / 2);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    
+
+}

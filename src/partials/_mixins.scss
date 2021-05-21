@@ -1,0 +1,20 @@
+@mixin list_horizontal {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+@mixin list_reset {
+    margin-left: 0;
+    list-style: none;
+    @include list_horizontal;
+}
+
+@mixin default_btn {
+    color:$primary_color;
+    text-decoration: none;
+    transition: color $transition_duration;
+    
+    &:hover {
+        color: $secondary_color;
+    }
+}
